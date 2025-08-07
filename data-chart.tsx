@@ -253,7 +253,11 @@ export default function Component() {
                 variant={activePreset === preset.label ? "default" : "outline"}
                 size="sm"
                 onClick={() => handlePresetClick(preset.label, preset.durationMs)}
-                className="h-7 px-3 text-xs"
+                className={`h-7 px-3 text-xs ${
+                  activePreset === preset.label 
+                    ? "bg-foreground text-background hover:bg-foreground/90" 
+                    : ""
+                }`}
               >
                 {preset.label}
               </Button>
