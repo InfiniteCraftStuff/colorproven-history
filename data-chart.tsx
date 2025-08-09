@@ -5,11 +5,11 @@ import { ChartContainer } from "@/components/ui/chart"
 import { useState, useMemo, useEffect } from "react"
 import { Slider } from "@/components/ui/slider"
 import { Button } from "@/components/ui/button"
-import { history } from "./history"
-import { getYAxisTickInterval } from "./chart-settings"
+import { history } from "./lib/history"
+import { getYAxisTickInterval } from "./lib/chart-settings"
 import { Checkbox } from "@/components/ui/checkbox"
 import { ThemeToggle } from "./components/theme-toggle"
-import { TIME_RANGE_PRESETS } from "./time-range-presets"
+import { TIME_RANGE_PRESETS } from "./lib/time-range-presets"
 
 interface DataPoint {
   timestamp: number
